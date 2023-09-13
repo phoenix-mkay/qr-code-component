@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Variables */
+:root{
+    --white:hsl(0, 0%, 100%);
+    --light-gray:hsl(212, 45%, 89%);
+    --grayish-blue:hsl(220, 15%, 55%);
+    --dark-blue:hsl(218, 44%, 22%);
+
+}
+body{
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    background-color: var(--light-gray);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#main{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main .container{
+    width: 87.5%;
+    max-width: 300px;
+    margin: 0 auto;
+    background: var(--white);
+    /* border: 2px solid var(--dark-blue); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+/* QR CODE IMAGE */
+.qr-code-img{
+    width:100%;
+    height: auto;
+
+}
+/* Title */
+.title{
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin:15px 0;
+    color: var(--dark-blue);
+}
+/* paragrapg text */
+p{
+    margin-bottom: 10px;
+    color: var(--grayish-blue);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
